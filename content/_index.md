@@ -29,10 +29,10 @@ sections:
         gradient_mesh:
           enable: true
 
-      # Name heading sizing to accommodate long or short names
+# Name heading sizing to accommodate long or short names
       name: Akira Yoko
-            size: md # Options: xs, sm, md, lg (default), xl
-
+      size: md # Options: xs, sm, md, lg (default), xl
+      
       # Avatar customization
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
