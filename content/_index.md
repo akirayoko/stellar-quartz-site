@@ -31,7 +31,7 @@ sections:
 
       # Name heading sizing to accommodate long or short names
       name: Akira Yoko
-        size: md # Options: xs, sm, md, lg (default), xl
+            size: md # Options: xs, sm, md, lg (default), xl
 
       # Avatar customization
       avatar:
