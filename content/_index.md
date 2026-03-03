@@ -30,7 +30,7 @@ sections:
           enable: true
 
       # Name heading sizing to accommodate long or short names
-      name:
+      name: Akira Yoko
         size: md # Options: xs, sm, md, lg (default), xl
 
       # Avatar customization
