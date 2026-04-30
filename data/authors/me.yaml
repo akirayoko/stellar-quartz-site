@@ -5,112 +5,91 @@ name:
   display: Dr. Akira Yoko
   given: Akira
   family: Yoko
-  alternate: '横　哲'  # Example: 王伟
-  pronunciation: ''  # Example: Wáng Wěi
-  pronouns: 
+  alternate: '横 哲'
+pronunciation: 'Yoko Akira'
+pronouns:
 postnominals:
   - PhD
-  - MIEEE
 status:
   icon: "☕️"
 role: Associate Professor
 bio: |
-  Akira Yoko is an associate professor in Tohoku University. Akira is passionate 
-  about exploring a new science of ultrasmall metal oxide nanoparticles. Chemical
-  engineering approach is used to open a new material science and physical chemistry 
-  of nanomaterials
-
+  Akira Yoko is an associate professor at Tohoku University. 
+  His research focuses on exploring the science of ultrasmall metal oxide nanoparticles. 
+  He utilizes a chemical engineering approach to pioneer new material science and physical chemistry of nanomaterials, particularly through supercritical hydrothermal synthesis.
 affiliations:
   - name: Tohoku University, International Center for Synchrotron Radiation Innovation Smart (SRIS)
-    url: https://ai.meta.com/
-
+    url: https://www.sris.tohoku.ac.jp/
 links:
   - icon: at-symbol
-    url: mailto:alex.johnson@example.com
+    url: mailto:akira.yoko.c7@tohoku.ac.jp
     label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/example
   - icon: brands/github
-    url: https://github.com/example
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/example/
+    url: https://github.com/akirayoko
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=example
+    url: https://scholar.google.com/citations?user=SRBj5OoAAAAJ&hl=ja
   - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://orcid.org/0000-0002-1278-272X
+  - icon: academicons/researchgate
+    url: https://www.researchgate.net/profile/Akira-Yoko
+  - icon: simple/researchmap
+    url: https://researchmap.jp/7000020994
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - Supercritical Hydrothermal Synthesis
+  - Metal Oxide Nanoparticles
+  - Physical Chemistry of Nanomaterials
+  - Chemical Engineering
+  - Synchrotron Radiation Measurement
 
 education:
-  - degree: PhD Computer Science
-    institution: Stanford University
-    start: 2015-09-01
-    end: 2019-06-30
+  - degree: PhD (Environmental Studies)
+    institution: The University of Tokyo
+    start: 2014-04-01
+    end: 2017-03-31
     summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
-    button:
-      text: Download dissertation
-      url: /resume.pdf
-      icon: hero/arrow-down-tray
-  - degree: MS Computer Science
-    institution: Carnegie Mellon University
-    start: 2013-09-01
-    end: 2015-05-31
-  - degree: BS Computer Science
-    institution: MIT
-    start: 2009-09-01
-    end: 2013-05-31
+      Recipient of the Dean's Award, Graduate School of Frontier Sciences.
 
 experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
+  - role: Associate Professor
+    org: Tohoku University, SRIS
+    start: 2024-04-01
     summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
-    button:
-      text: View portfolio
-      url: /
-      icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
-    summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+      Focusing on hierarchical spectroscopic measurement and nanomaterials design.
+  - role: Assistant Professor
+    org: Tohoku University, AIMR
+    start: 2017-04-01
+    end: 2024-03-31
 
 skills:
   - name: Technical Skills
     items:
-      - label: Python
+      - label: Supercritical Fluid Technology
         level: 5
-      - label: Machine Learning
+      - label: Nanoparticle Synthesis
         level: 5
-      - label: Cloud Computing
-        level: 4
+      - label: X-ray Absorption Fine Structure (XAFS)
+        level: 5
   - name: Research & Communication
     items:
       - label: Academic Writing
-        level: 5
-      - label: Conference Presentations
-        level: 4
-      - label: Grant Proposals
-        level: 4
+      - label: Project Management
 
 languages:
-  - name: English
+  - name: Japanese
     level: 5
     label: Native
-  - name: Spanish
+  - name: English
     level: 4
     label: Fluent
 
 awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
-    icon: hero/trophy
+  - title: Sawamura Award
+    awarder: The Iron and Steel Institute of Japan
+    date: "2026-03-01"
+  - title: Young Scientist Award
+    awarder: The Japanese Association for Crystal Growth
+    date: "2025-11-01"
+  - title: Nanoscale Horizons Award
+    awarder: The Japan Society of Nanomedicine
+    date: "2024-05-01"
