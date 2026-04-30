@@ -1,75 +1,74 @@
-# Configuration of Hugo
-# Guide: https://docs.hugoblox.com/tutorial/
-# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
+# config/_default/hugo.yaml
 
-# Website name (set in params.yaml under hugoblox.branding.name)
-title: 'Akira Yoko'
+# サイトの基本設定
+title: Akira Yoko, Ph.D. | Tohoku University
+baseURL: "https://akirayoko.jp/"
+languageCode: "ja-jp"
+hasChildrenSpacing: true
 
-# Website URL
-# 自分のGitHub PagesのURL（例: https://akirayoko.github.io/stellar-quartz-site/）に変更してください
-baseURL: 'https://akirayoko.github.io/stellar-quartz-site/'
+# 多言語設定：国際的なプレゼンス（ISHA等）と国内（東大物性研/NIMS）の両立
+languages:
+  en:
+    languageCode: "en-us"
+    contentDir: "content/en"
+    title: "Akira Yoko, Ph.D."
+    params:
+      description: "Associate Professor at Tohoku University. Expert in Supercritical Hydrothermal Synthesis and Nanomaterials Science."
+  ja:
+    languageCode: "ja-jp"
+    contentDir: "content/ja"
+    title: "横 亮 (Akira Yoko) - 東北大学 准教授"
+    params:
+      description: "東北大学多元物質科学研究所 准教授。超臨界水熱合成を用いたナノ材料創製とそのプロセス開発に従事。"
 
-############################
-## LANGUAGE
-############################
+# メニュー構成：実績（h-index 18 / 論文57本）と直近の重要プロジェクトを強調
+menu:
+  main:
+    - name: About
+      url: "#about"
+      weight: 10
+    - name: Research
+      url: "#projects" # ナノ材料合成や超臨界プロセスの研究
+      weight: 20
+    - name: Publications
+      url: "#publications" # Researchmap/ORCIDと連動した最新リスト
+      weight: 30
+    - name: ISHA 2027
+      url: "/isha-seminar" # 2027年3月のセミナー開催に向けて独立
+      weight: 40
+    - name: Contact
+      url: "#contact"
+      weight: 50
 
-defaultContentLanguage: en
-# 日本語などの検索や文字カウントを正しく行うために true に設定
-hasCJKLanguage: true
-defaultContentLanguageInSubdir: false
-removePathAccents: true
+params:
+  # ブランディング：学術的信頼感の高いデザイン
+  appearance:
+    theme: "minimal"
+    font: "playfair" # 落ち着いたセリフ体を選択
+    font_size: "L"
 
-############################
-## PAGE OPTIONS
-############################
+  # 連絡先・所属情報（Researchmap準拠）
+  contact_links:
+    - icon: twitter
+      icon_pack: fab
+      link: "https://twitter.com/yoko_akira" # アカウントがある場合
+    - icon: google-scholar
+      icon_pack: ai
+      link: "https://scholar.google.com/citations?user=YOUR_ID"
+    - icon: researchgate
+      icon_pack: ai
+      link: "https://www.researchgate.net/profile/Akira-Yoko"
+    - icon: orcid
+      icon_pack: ai
+      link: "https://orcid.org/0000-0002-1278-272X"
+    - icon: cv
+      icon_pack: ai
+      link: "https://researchmap.jp/7000020994"
 
-cascade:
-  - _target:
-      path: /slides/**
-    kind: page
-    outputs: [HTML, present]
+  # SEO・SNS共有設定
+  marketing:
+    google_analytics: "G-XXXXXXXXXX" # 必要に応じて設定
 
-############################
-## ADVANCED
-############################
-
-build:
-  writeStats: true
-  enableGitInfo: false
-  summaryLength: 30
-
-pagination:
-  pagerSize: 10
-
-enableEmoji: true
-enableRobotsTXT: true
-footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
-disableAliases: true
-
-outputs:
-  home: [HTML, RSS, headers, redirects, backlinks]
-  section: [HTML, RSS]
-
-imaging:
-  resampleFilter: lanczos
-  quality: 90
-  anchor: smart
-  hint: picture
-  timeout: 600000
-
-taxonomies:
-  author: authors
-  tag: tags
-  publication_type: publication_types
-
-markup:
-  _merge: deep
-  highlight:
-    lineNos: false
-
-security:
-  _merge: deep
-
-sitemap:
-  _merge: deep
+  # 論文引用数などの自動バッジを表示する場合
+  features:
+    citation_badges: true
